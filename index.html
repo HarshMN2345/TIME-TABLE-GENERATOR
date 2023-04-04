@@ -1,0 +1,205 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time table generator</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
+</head>
+<body>
+    <div class="uy">
+        <h1 class="gt">Time table Generator</h1>
+        <h2>by harsh mahajan</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <button class="btn1">TiME-TABLE</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn2">7-8</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn2">8-9</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn2">9-10</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn2">10-11</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn45">11-12</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn2">12-1</button>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <button class="btn1"> Monday</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="a" onclick="setLectureName()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="b" onclick="setLectureName()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="c" onclick="setLectureName()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="d" onclick="setLectureName()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn45">LUNCH-BREAK</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="e" onclick="setLectureName()"> ?</button>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <button class="btn1">Tuesday</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn3" id="f" onclick="setLectureName2()" > ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn3" id="g" onclick="setLectureName2()" > ?</button>
+                    </div>
+                  <div class="col-sm">
+                    <button class="btn3" id="h" onclick="setLectureName2()" > ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn3"  id="i" onclick="setLectureName2()" > ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn45" >LUNCH-BREAK</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn3" id="j" onclick="setLectureName2()" > ?</button>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <button class="btn1"">Wednesday</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn2" id="k" onclick="setLectureName3()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn2" id="l" onclick="setLectureName3()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn2" id="m" onclick="setLectureName3()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn2" id="n" onclick="setLectureName3()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn45">LUNCH-BREAK</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn2" id="o" onclick="setLectureName3()"> ?</button>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <button class="btn1">Thursday</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="p" onclick="setLectureName4()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="q" onclick="setLectureName4()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="r" onclick="setLectureName4()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="s" onclick="setLectureName4()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn45" id="t" onclick="setLectureName4()">LUNCH-BREAK</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="u" onclick="setLectureName4()"> ?</button>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <button class="btn1">Friday</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="v" onclick="setLectureName5()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="w" onclick="setLectureName5()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="x" onclick="setLectureName5()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="y" onclick="setLectureName5()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn45">LUNCH-BREAK</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="z" onclick="setLectureName5()"> ?</button>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <button class="btn1">Saturday</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="a1" onclick="setLectureName6()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="a2" onclick="setLectureName6()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="a3" onclick="setLectureName6()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="a4" onclick="setLectureName6()"> ?</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn45">LUNCH-BREAK</button>
+                  </div>
+                  <div class="col-sm">
+                    <button class="btn4" id="a5" onclick="setLectureName6()"> ?</button>
+                  </div>
+            </div>
+          </div>
+    </div>
+    <br>
+    <h2 class="parah">how to use?</h2>
+    <br>
+    <p class="po">To use a time table generator, you will typically need to provide input in the form of your schedule or timetable, which could include information such as the courses or subjects you are taking, the time slots for each class, the days of the week on which each class is held, and the room or location for each class.
+
+        Once you have provided this information, the timetable generator will create a visual representation of your schedule, which could be in the form of a table, chart, or calendar. This will allow you to see at a glance when each class is scheduled, and help you manage your time effectively.
+        
+        Here are the general steps you can follow to use a time table generator:
+        
+        Collect your schedule information: Gather all the information you need to create your timetable. This could include the courses or subjects you are taking, the time slots for each class, the days of the week on which each class is held, and the room or location for each class.
+        
+        Find a timetable generator: Search online for a timetable generator that suits your needs. There are many free and paid options available, so you can choose one that fits your requirements and budget.
+        
+        Input your schedule information: Enter your schedule information into the timetable generator. This could involve filling out a form or spreadsheet, or uploading a file with your schedule data.
+        
+        Generate your timetable: Once you have input all your schedule information, the timetable generator will create a visual representation of your schedule. Review the generated timetable to make sure it accurately reflects your schedule.
+        
+        Use your timetable: Use the generated timetable to manage your time effectively. Make sure to keep it up to date as your schedule changes, so you can stay organized and on track.</p>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

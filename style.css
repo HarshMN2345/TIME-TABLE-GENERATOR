@@ -1,0 +1,40 @@
+.uy{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: red;
+}
+
+.gt{
+    font-size: 5rem;
+}
+.col-sm{
+    border: 5px solid;
+}
+.btn1{
+    background-color: aqua;
+    width:100%;
+}
+.btn2{
+    background-color: orange ;
+    width:100%;
+}
+.btn3{
+    background-color: blueviolet;
+    width:100%;
+}
+.btn4{
+    background-color: pink;
+    width:100%;
+}
+.btn45{
+    width: 100%;
+}
+.parah{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blue;
+    font-size: 3rem;
+}
+.po{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
